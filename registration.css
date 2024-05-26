@@ -92,5 +92,6 @@ img {
 .form h2 {
     text-align: center;
     color: white; 
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    font-size: 25px; 
 }
