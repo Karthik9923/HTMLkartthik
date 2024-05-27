@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>LandingPage</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        background-color: #6d9d61;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 12px;
+        color: white;      
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        padding: 10px;
+        margin-right: 35px;
+    }
+    a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 12px;
+        color: white;
+    }
+    a:hover {
+        color:rgb(5, 14, 7);
+    }
+    nav h2{
+        margin-left: 20px;
+    }
+    .intro{
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .image{
+        flex-direction: right;
+        margin-right: 190px;
+    }
+    .header {
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 70px;
+        font-size: 32px;
+        color: #267b11;
+    }
+    .explore{
+        border-radius: 100px;
+        padding: 10px;
+        width: 170px;
+        margin-left: 20px;
+        border: hidden;
+    }
+    .explore:hover {
+        background-color:#6d9d61;
+        cursor: grab;
+    }
+    .container{
+        width: 100%;
+        height: 230px;
+        margin-top: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .box{
+        width: 430px;
+        height: 140px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    }
+    .box h2{
+        margin-top: 25px;
+    }
+    .box p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer {
+        margin: 100px;
+        margin-top: 50px;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sign-up{
+        margin: 50px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="password"] {
+            background-color: transparent;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+            border: hidden;
+            border-radius: 8px;
+            width: 300px;
+            height: 30px;
+    }
+    .form button {
+        width: 40%;
+        background-color:rgb(234, 234, 234);
+        border-radius: 12px;
+        padding: 9px;
+        border: hidden;
+        margin:10px;
+    }
+    .form button:hover{
+        background-color: #267b11;
+        cursor: grab;
+    }
+    .form input:hover{
+        border: 1px solid grey;
+    }
+    .contact {
+        margin-top: 50px;
+    }
+    .contact p{
+        color: grey;
+        font-size: 18px;
+    }
+    .contact h2{
+        font-size: 20px;
+    }
+</style>
+<body>
+    <nav>
+        <h2>Landing Page</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>       
+    </nav>
+    <div class="intro">
+        <div class="header">
+            <h1>Discover The World Of<br> Barbie</h1>
+            <button class="explore">Explore now</button>
+        </div>
+        <div class="image">
+            <img src="barbie.jpg" alt="barbie logo">
+        </div>
+   </div>
+   <h2 style="text-align: center; font-size: 40px; padding-top: 40px;">Barbie</h2>
+   <div class="container">
+    <div class="box">
+        <h2>DSA</h2>
+        <p>The term DSA stands for Data Structure and Algorithms. As the name itself suggests,it is a combination of two separate yet interrelated topics.</p>
+    </div>
+    <div class="box">
+        <h2>HTML</h2>
+        <p>
+            HTML Stands for HyperText Markup Language. It is used to desing web pages using the markup language
+        </p>
+    </div>
+    <div class="box">
+        <h2>JavaScript</h2>
+        <p>
+            JavaScript(JS) is the most popular lightweight, interpreted compiled programming language
+        </p>
+    </div>
+   </div>
+   <h2 style="font-size: 40px;
+   font-weight: bold; text-align: center;">Sign Up</h2>
+   <div class="footer">
+    <div class="sign-up">
+        <form action="" class="form">
+            <label>Your First Name</label><br>
+            <input type="text" placeholder="Enter Your Name here"><br>
+            <label>Your email</label><br>
+            <input type="email" placeholder="Enter Your Email here"><br>
+            <label>Your Password</label><br>
+            <input type="password" placeholder="Enter Your Password here"><br>
+            <button>Sign Up</button>
+        </form>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>A-143, 9th, Sovereign Corporate Tower, Sector-136,<br> Noida, Uttar Pradhesh -201305</p><br>
+        <h2>More Information</h2>
+        <p>Greets to all the Geeks out there! We welcome you to be the <br>
+            platform where are consistently strive to offer the best of <br>
+            education. This platform has been designed for every geek <br>
+            wishing to expand their knowledge, share their knowledge and <br>
+            is ready to grab their dream job. We have millions of articles,<br>
+            live as well as online courses. thousands of tutorials and much <br>
+            more just for the geek inside you. Thank you for choosing and <br>
+            supporting us!</p>
+    </div>
+   </div>
+</body>
+</html>
