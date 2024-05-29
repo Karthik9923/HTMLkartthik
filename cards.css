@@ -13,16 +13,7 @@ body {
     margin-top: 150px;
     display: flex;
 }
-.left {
-    position: relative;
-    height: 450px;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #1d204b;
-    border-radius: 15px;
-    z-index: -1;
-}
+
 .right {
     position: relative;
     width: 900px;
@@ -32,12 +23,12 @@ body {
     margin-left: 20px;
 }
 .profile-card {
-    position: absolute;
+    position:relative;
     width: 246px;
     height: 330px;
     border-radius: 15px;
     background-color: #5847eb;
-    z-index: 0;
+    z-index: 2;
 }
 .right-top {
     display: flex;
@@ -98,6 +89,7 @@ ul {
     display: flex;
     list-style-type: none;
     text-decoration: none;
+
 }
 .card-inside h1 {
     padding-left: 30px;
@@ -123,29 +115,7 @@ ul {
     padding-left: 30px;
     font-size: 10px;
 }
-.left h3{
-    position: absolute;
-    
-}
-.left ul{
-    display: block;
-    list-style-type: none;
-    position: absolute;
-    bottom: 0;
-    padding: 30px;
-}
-.left li {
-    margin-top: 10px;
-}
-.left button {
-    background-color: transparent;
-    border: hidden;
-    color:#c6caef;
-}
-.left button:hover {
-    color: rgb(7, 7, 7);
-    cursor: grab;
-}
+
 .card img{
     position: absolute;
     top: 0;
@@ -153,4 +123,39 @@ ul {
     height: 70px;
     width: 70px;
     transform: rotate(50deg);
+    opacity: 0.1;
 }
+
+.left{
+    position: relative;
+}
+
+.main{
+    width: 246px;
+    height: 330px;
+    background-color: #1d204b;
+    border-radius: 15px;
+    position: absolute;
+    top: 140px;
+    z-index: 1;
+}
+.mainul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 200px;
+    padding-left: 30px;
+   
+}
+.mainul li {
+    margin-top: 10px;
+}
+.mainul a {
+    color:#c6caef;
+    text-decoration: none;
+}
+.mainul a:hover {
+    color: aliceblue;
+}
+
+
+
