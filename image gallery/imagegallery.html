@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: blanchedalmond;
+}
+.header h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: darkgoldenrod;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+
+<div class="header">
+  <h1>Image Gallery</h1>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="4.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+    <img src="6.jpg" style="width:100%">
+    <img src="7.jpg" style="width:100%">
+    <img src="8.jpg" style="width:100%">
+    <img src="9.jpg" style="width:100%">
+    <img src="4.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="1.jpg" style="width:100%">
+    <img src="2.jpg" style="width:100%">
+    <img src="3.jpg" style="width:100%">
+    <img src="4.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+    <img src="6.jpg" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="7.jpg" style="width:100%">
+    <img src="8.jpg" style="width:100%">
+    <img src="9.jpg" style="width:100%">
+    <img src="1.jpg" style="width:100%">
+    <img src="3.jpg" style="width:100%">
+    <img src="4.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="1.jpg" style="width:100%">
+    <img src="2.jpg" style="width:100%">
+    <img src="3.jpg" style="width:100%">
+    <img src="4.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+    <img src="6.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
+

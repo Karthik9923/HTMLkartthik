@@ -90,11 +90,23 @@
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: 65px;
         color: #e2e3e4;
+        animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms infinite;
     }
+    @keyframes animate { 
+                0% { 
+                   display: none;
+                } 
+  
+                30% { 
+                    display: none;
+                } 
+            } 
     .header p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 16px;
         color: #e2e3e4;
+        animation: animate 3s linear forwards;
     }
     .button {
         margin-top: 25px;
@@ -114,10 +126,13 @@
     }
     .image img {
         width: 90%;
-        animation: rotate 5s infinite;
-    }
-    @keyframes rotate {
-        50% {transform: rotate(180deg);}
+        animation-duration: 50s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-name: imgRotate;
+        }
+    @keyframes imgRotate {
+        50% {transform: rotateZ(360deg);}
         }
     .btn1:hover {
         color: black;
