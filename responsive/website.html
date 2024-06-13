@@ -48,8 +48,9 @@ body {
 
 .main {
   flex: 70%;
+  display: flex;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
 .fakeimg {
@@ -84,10 +85,19 @@ body {
     width: 100%;
     max-width: 300px;
 }
-.me1 img {
+.img1 {
+  width: 50%;
+}
+.img1 img {
     width: 100%;
     max-width: 300px;
-    background-image: url(8.jpg);
+}
+.img2 {
+  width: 20%;
+}
+.img2 img {
+    width: 100%;
+    max-width: 300px;
 }
 
 @media screen and (max-width: 700px) {
@@ -116,17 +126,13 @@ body {
     <p>Lorem ipsum dolor sit ame.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit.</p>
   </div>
   <div class="main">
-    <h2>HEADING</h2>
-    <h5>Title description</h5>
-    <div class="fakeimg" style="height:200px;"></div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>HEADING</h2>
-    <h5>Title description</h5>
-    <div class="fakeimg" style="height:200px;"></div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <div class="img1">
+        <img src="8.jpg" alt="">
+      </div>
+      <div class="img2">
+        <img src="2.jpg" alt="">
+      </div>
+  </div>
   </div>
 </div>
 
